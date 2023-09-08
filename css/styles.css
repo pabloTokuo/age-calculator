@@ -1,0 +1,116 @@
+:root {
+  --purpleColor: hsl(259, 100%, 65%);
+  --errorColor: hsl(0, 100%, 67%);
+  --background: hsl(0, 0%, 100%);
+  --bodybackground: hsl(0, 0%, 94%);
+  --placeHolder: hsl(0, 1%, 44%);
+  --blackColor: hsl(0, 0%, 8%);
+}
+
+p, span {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bodybackground);
+}
+
+.all-container {
+  background-color: var(--background);
+  width: 840px;
+  height: 651px;
+  margin: 50px auto;
+  padding: 3.5rem;
+  border: 0.0625rem solid transparent;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 12.5rem;
+  border-bottom-left-radius: 1.5rem;
+}
+
+.label-input__container {
+  display: flex;
+  gap: 2rem;
+}
+
+.label-input__container > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.label-input__container label {
+  color: var(--placeHolder);
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+
+.label-input__container input {
+  width: 10rem;
+  height: 3rem;
+  padding: 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  border: 2px solid #DCDCDC;
+  border-radius: 8px;
+  outline: none;
+}
+
+.label-input__container input:focus {
+  border: 2px solid var(--purpleColor);
+}
+
+::placeholder {
+  color: hsl(0, 1%, 44%);
+}
+
+.btn-container {
+  margin: 2.9688rem 0;
+  position: relative;
+}
+
+.btn-container hr {
+  color: #DCDCDC;
+  border: 1px solid #DCDCDC;
+  width: 97%;
+  left: -12px;
+  position: inherit;
+}
+
+.btn {
+  position: absolute;
+  width: 6rem;
+  height: 6rem;
+  border: 1px solid transparent;
+  border-radius: 13.5rem;
+  right: 0.625rem;
+  bottom: -2.6875rem;
+  background-color: var(--purpleColor);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--blackColor);
+}
+
+.age-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.age-container span {
+  color: var(--purpleColor);
+  font-size: 6.5rem;
+  font-weight: bold;
+  letter-spacing: -2%;
+  line-height: 110%;
+}
+
+.age-container p {
+  font-size: 6.5rem;
+  font-weight: bold;
+  color: var(--blackColor);
+  letter-spacing: -2%;
+  line-height: 110%;
+}
