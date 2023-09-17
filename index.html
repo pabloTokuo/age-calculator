@@ -19,25 +19,27 @@
         <div>
           <label for="day">Day</label>
           <input data-js="input-calendar" type="text" id="day" placeholder="DD" maxlength="2">
-          <p>Must be a valid day</p>
-          <p>This field is required</p>
+          <p class="error">Must be a valid day</p>
+          <p class="error">This field is required</p>
         </div>
         <div>
           <label for="month">Month</label>
           <input data-js="input-calendar" type="text" id="month" placeholder="MM" maxlength="2">
-          <p>Must be a valid month</p>
-          <p>This field is required</p>
+          <p class="error">Must be a valid month</p>
+          <p class="error">This field is required</p>
         </div>
         <div>
           <label for="year">Year</label>
           <input data-js="input-calendar" type="text" id="year" placeholder="YYYY" maxlength="4">
-          <p>Must be in the past</p>
-          <p>This field is required</p>
+          <p class="error">Must be in the past</p>
+          <p class="error">This field is required</p>
         </div>
       </div>
       <div class="btn-container">
         <hr>
-        <button data-js="btn" class="btn" type="submit" onclick="count()"><img src="/assets/images/icon-arrow.svg" alt="Submit Button"></button>
+        <button data-js="btn" class="btn" type="submit">
+          <img src="/assets/images/icon-arrow.svg" alt="Submit Button">
+        </button>
       </div>
       <div class="age-container">
         <p><span>- -</span> years</p>
@@ -46,11 +48,6 @@
       </div>
     </div>
   </main>
-  
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
   <script src="js/index.js"></script>
 </body>
 </html>

@@ -65,6 +65,12 @@ body {
   color: hsl(0, 1%, 44%);
 }
 
+.error {
+  color: var(--errorColor);
+  font-size: 14px;
+  font-weight: 400;
+}
+
 .btn-container {
   margin: 2.9688rem 0;
   position: relative;

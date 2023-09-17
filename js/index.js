@@ -18,6 +18,29 @@ const onlyNumber = (v) => {
 
 // Input validator
 const btn = document.querySelector('[data-js="btn"]');
-const day = document.getElementById('day');
-const month = document.getElementById('month');
+const dayInput = document.getElementById('day');
+const monthInput = document.getElementById('month');
 const year = document.getElementById('year');
+
+
+btn.addEventListener('click', () => {
+  let dayValue = parseInt(dayInput.value);
+  let monthValue = parseInt(monthInput.value);
+  
+
+  const isDayValidForMonth = (day, month) => {
+    // Validating month
+    if (month < 1 || month > 12) {
+      return false;
+    }
+  
+    // Creating Date object
+    const date = new Date(new Date().getFullYear(), month - 1, day);
+    
+    return date.getMonth() === month - 1 && date.getDate() === day;
+  }
+  
+  const isValid = isDayValidForMonth(dayValue, monthValue);
+  console.log(`Is ${dayValue}/${monthValue} a valid date? ${isValid}`);
+})
+
