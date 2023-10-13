@@ -21,8 +21,8 @@ body {
 .all-container {
   background-color: var(--background);
   width: 840px;
-  height: 651px;
-  margin: 50px auto;
+  height: 540px;
+  margin: 3.125rem auto;
   padding: 3.5rem;
   border: 0.0625rem solid transparent;
   border-top-left-radius: 1.5rem;
