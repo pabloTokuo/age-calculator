@@ -15,6 +15,7 @@ p, span {
 body {
   font-family: 'Poppins', sans-serif;
   background-color: var(--bodybackground);
+  overflow: hidden;
 }
 
 .all-container {
@@ -65,7 +66,11 @@ body {
   color: hsl(0, 1%, 44%);
 }
 
-.error {
+.day-error, .month-error, .year-error, .day-req, .month-req, .year-req {
+  display: none;
+}
+
+.day-req, .day-error, .month-error, .month-req, .year-error, .year-req {
   color: var(--errorColor);
   font-size: 14px;
   font-weight: 400;
